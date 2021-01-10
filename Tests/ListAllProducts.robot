@@ -11,6 +11,11 @@ Test Teardown  Runner.Close TestCase
 Verify the listed products
     [Documentation]  All products displayed on the page should be listed
     [Tags]  Functional
-    Set Selenium Speed  1s
     HomePage.Click the Main Button
     HomePage.Click the All Collections Button
+    @{products}=  Get WebElements  xpath://span[@class='grid-product__title']
+
+    FOR  ${i}  IN  @{products}
+        ${text}=  Get Text  ${i}
+        log to console  ${text}
+    END

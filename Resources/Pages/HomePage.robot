@@ -25,4 +25,6 @@ Click the Two Seated Button
     Click Button  ${TwoSeatButton}
 
 Click the All Collections Button
+    Wait Until Element Is Visible  ${AllColButton}
     Click Element  ${AllColButton}
+
