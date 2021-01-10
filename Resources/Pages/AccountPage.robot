@@ -1,3 +1,6 @@
+*** Settings ***
+Library  SeleniumLibrary    timeout=3s
+
 *** Variables ***
 ${Email}  id:CustomerEmail
 ${Password}  id:CustomerPassword
@@ -15,3 +18,7 @@ Enter Password in To The Box
 
 Click To The SignIn Button
     Click Element   ${SignIn}
+
+Create a New Account
+    Click Element  ${CreatAccount}
+    Page Should Contain  Create Account

@@ -1,5 +1,5 @@
 *** Settings ***
-Library  SeleniumLibrary
+Library  SeleniumLibrary    timeout=3s
 
 *** Variables ***
 ${MainButton}  xpath://button[@class='icon-fallback-text site-nav__link site-nav__link--burger js-drawer-open-button-left']

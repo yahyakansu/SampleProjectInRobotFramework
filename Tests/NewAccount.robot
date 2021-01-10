@@ -7,14 +7,26 @@ Resource  ../Resources/Pages/AccountPage.robot
 Resource  ../Resources/Pages/RegisterPage.robot
 
 Test Setup  Runner.Start TestCase
-Test Teardown  Runner.Close TestCase
+#Test Teardown  Runner.Close TestCase
 
 *** Test Cases ***
-Open Account Functionalities
-    [Documentation]  New user able to open a new account
-    [Tags]  Fucntional
+#Open Account Functionalities
+#    [Documentation]  User able to open the account
+#    [Tags]  Functional
+#
+#    HomePage.Open Account Page
+#    AccountPage.Enter Email in To The Box  hakan@gmail.com
+#    AccountPage.Enter Password in To The Box  123456
+#    AccountPage.Click To The SignIn Button
+
+Create a New Account Test
+    [Documentation]  New user able to create a new account
+    [Tags]  Functional
 
     HomePage.Open Account Page
-    AccountPage.Enter Email in To The Box  hakan@gmail.com
-    AccountPage.Enter Password in To The Box  123456
-    AccountPage.Click To The SignIn Button
+    AccountPage.Create a New Account
+    RegisterPage.Enter First Name  Salih
+    RegisterPage.Enter Last Name  Kalin
+    RegisterPage.Enter an Email  salih@gmail.com
+    RegisterPage.Enter a Password  123456
+    RegisterPage.Submit with Button
