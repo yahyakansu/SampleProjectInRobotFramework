@@ -1,3 +1,6 @@
+*** Settings ***
+Library  SeleniumLibrary
+
 *** Variables ***
 ${MainButton}  xpath://button[@class='icon-fallback-text site-nav__link site-nav__link--burger js-drawer-open-button-left']
 ${RideOnsButton}  partial link:Ride-ons
@@ -28,3 +31,6 @@ Click the All Collections Button
     Wait Until Element Is Visible  ${AllColButton}
     Click Element  ${AllColButton}
 
+Open Account Page
+    Click Element  ${Login}
+    Page Should Contain  Login
