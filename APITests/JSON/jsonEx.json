@@ -1,0 +1,26 @@
+{
+  "firstName": "Vera",
+  "lastName": "Jakson",
+  "birthDate": "02/02/1985",
+  "gender": "F",
+  "contact":
+  {
+    "phone": ["7738557985","3456546436","5543542663"],
+    "emailAddress": "aaa@gmail.com",
+    "permanentAddress":
+    {
+      "street": "123 main str",
+      "zipcode": "23456"
+    }
+  },
+  "company": {
+    "companyName": "Apple",
+    "title": "Devops",
+    "address": {
+      "street": " 100 S Clark str",
+      "city": "Chicago",
+      "state": "IL",
+      "zipCode": 60606
+    }
+  }
+}
