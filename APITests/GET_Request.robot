@@ -10,7 +10,7 @@ ${who}  students
 *** Test Cases ***
 Get Students Info
     Create Session  mysession  ${base_url}
-    ${response}=  Get On Session  mysession  ${who}
+    ${response}=  GET On Session  mysession  ${who}
 
 #    log to console  ${response.status_code} #200
 #    log to console  ${response.content}     #Body
